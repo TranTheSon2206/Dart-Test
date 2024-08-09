@@ -73,12 +73,16 @@ void main() async {
   List<Student> studentList = await loadStudents(filePath);
 
   while (true) {
+    print('--------Quản lý sinh viên---------');
+    print('');
     print('1. Hiển thị toàn bộ sinh viên');
     print('2. Thêm sinh viên');
     print('3. Sửa thông tin sinh viên');
     print('4. Tìm kiếm sinh viên');
     print('5. Hiển thị sinh viên có điểm thi môn cao nhất');
     print('6. Thoát');
+    print('');
+    print('Hãy lựa chọn tùy chọn: ');
     String? choice = stdin.readLineSync();
 
     switch (choice) {
